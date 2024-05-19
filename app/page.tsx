@@ -1,4 +1,6 @@
 // app/page.tsx
+export const dynamic = "force-dynamic";
+
 import { ToDos } from "@/components/ToDos";
 import { getToDos } from "@/actions";
 import { Footer } from "@/components/Footer";
