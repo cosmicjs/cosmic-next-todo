@@ -45,12 +45,12 @@ export function ToDos({ todos }: { todos: ToDoType[] | [] }) {
   }
   return (
     <>
-      <div className="text-gray-600 dark:text-gray-200">
+      <div className="text-gray-600 dark:text-gray-200 text-lg font-semibold">
         {clientTodos.map((todo: ToDoType) => {
           return (
             <div
               key={todo.id}
-              className="group mb-2 flex gap-x-1 cursor-pointer"
+              className="group mb-3 flex gap-x-1 cursor-pointer"
             >
               <input
                 onChange={() => handleStatusChange(todo)}
@@ -68,7 +68,7 @@ export function ToDos({ todos }: { todos: ToDoType[] | [] }) {
                 className="group-hover:inline-block hidden ml-2 w-[100px] text-red-400"
                 onClick={() => handleDeleteClick(todo.id)}
               >
-                x delete
+                delete
               </div>
             </div>
           );
