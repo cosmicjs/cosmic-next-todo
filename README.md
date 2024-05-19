@@ -29,7 +29,16 @@ pnpm
 bun i
 ```
 
-Then [log in to your Cosmic dashboard](https://app.cosmicjs.com/). And create a new Project with the Object type `ToDos`.
+## Create Project in Cosmic
+
+Then [log in to your Cosmic dashboard](https://app.cosmicjs.com/) and create a new empty Project.
+![Create Project](https://imgix.cosmicjs.com/8e311430-0bd7-11ef-9eca-7d347081a9fb-create-new-project.png?w=2000&auto=forat,compression)
+
+Create an Object type `ToDos` with slug `todos`:
+![Create Object Type](https://imgix.cosmicjs.com/e457e220-160f-11ef-9eca-7d347081a9fb-CleanShot-2024-05-19-at-11.44.112x.png?w=2000&auto=forat,compression)
+
+Add the switch Metafield with key `completed`.
+![Add completed Metafield](https://imgix.cosmicjs.com/e5873a60-160f-11ef-9eca-7d347081a9fb-CleanShot-2024-05-19-at-11.43.322x.png?w=2000&auto=forat,compression)
 
 Then copy the `.env.copy` to a new `.env.local` file. And add your API keys found in the Cosmic dashboard at _Project / API keys_.
 
