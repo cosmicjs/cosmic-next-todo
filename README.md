@@ -4,9 +4,21 @@ This is a Cosmic ToDo example app. It demontrates how to use Next.js, React, and
 
 First, clone this repo.
 
-```
+```bash
 git clone https://github.com/cosmicjs/cosmic-next-todo
 cd cosmic-next-todo
+```
+
+Then install packages.
+
+```bash
+npm i
+# or
+yarn
+# or
+pnpm
+# or
+bun i
 ```
 
 Then [log in to your Cosmic dashboard](https://app.cosmicjs.com/). And create a new Project with the Object type `ToDos`.
