@@ -13,6 +13,7 @@ export type ToDoType = {
 export function ToDos({ todos }: { todos: ToDoType[] | [] }) {
   const [clientTodos, setClientTodos] = useState(todos);
   const [todoTitle, setTodoTitle] = useState("");
+  const [disabled, setDisabled] = useState(false);
   function handleStatusChange(todo: ToDoType) {
     updateToDo(todo.id, !todo.metadata.completed);
     const updatedTodos = clientTodos.map((updatedTodo) => {
@@ -23,6 +24,7 @@ export function ToDos({ todos }: { todos: ToDoType[] | [] }) {
     setClientTodos(updatedTodos);
   }
   async function handleAddToDo(title: string) {
+    if (disabled) return;
     if (!title.trim()) return;
     addToDo(title);
     // Reset title field
@@ -32,8 +34,12 @@ export function ToDos({ todos }: { todos: ToDoType[] | [] }) {
       ...clientTodos,
       { id: "temporary-id", title, metadata: { completed: false } },
     ]);
+    // Disable add
+    setDisabled(true);
     // Refetch real data
-    setClientTodos(await getToDos());
+    const todos = await getToDos();
+    setClientTodos(todos);
+    setDisabled(false);
   }
   async function handleDeleteClick(id: string) {
     deleteToDo(id);
