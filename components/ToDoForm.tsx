@@ -8,9 +8,9 @@ export function ToDoForm({
   todoTitle: string;
 }) {
   return (
-    <div className="flex gap-x-2">
+    <div className="flex gap-x-2 flex-row">
       <input
-        className="text-gray-600 dark:text-gray-200 dark:bg-gray-800 border-gray-400 dark:border-gray-900 p-2 border-2 rounded-lg"
+        className="text-gray-600 dark:text-gray-200 dark:bg-gray-800 border-gray-400 dark:border-gray-900 p-2 border-2 rounded-lg basis-1/2"
         type="text"
         onChange={(e: React.FormEvent<HTMLInputElement>) => {
           handleTitleChange(e.currentTarget?.value);
@@ -27,7 +27,7 @@ export function ToDoForm({
       <button
         type="submit"
         disabled={!todoTitle.trim()}
-        className="border-2 border-gray-400 dark:border-gray-900 rounded-lg w-32"
+        className="basis-1/2 border-2 border-gray-400 dark:border-gray-900 rounded-lg"
         onClick={() => handleAddToDo(todoTitle)}
       >
         Save
