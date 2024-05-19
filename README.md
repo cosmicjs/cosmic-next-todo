@@ -2,6 +2,12 @@
 
 This is a Cosmic ToDo example app. It demontrates how to use Next.js, React, and Cosmic to create a ToDo app that interacts with the Cosmic CMS API using the [Cosmic JavaScript SDK](https://www.npmjs.com/package/@cosmicjs/sdk).
 
+## Features
+
+- React Server Components
+- Server Actions (No exposed API keys)
+- Tailwind CSS
+
 ## Getting Started
 
 First, clone this repo.
