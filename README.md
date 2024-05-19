@@ -1,4 +1,7 @@
 # Cosmic Next ToDo
+![ToDo app screenshot](https://imgix.cosmicjs.com/49e208e0-1611-11ef-9eca-7d347081a9fb-CleanShot-2024-05-19-at-11.54.322x.png)
+
+[[View Live Demo](https://cosmic-next-todo.vercel.app/)]
 
 A ToDo app example that demontrates how to use Next.js, React, and Cosmic to create a ToDo app that interacts with the Cosmic CMS API using the [Cosmic JavaScript SDK](https://www.npmjs.com/package/@cosmicjs/sdk).
 
