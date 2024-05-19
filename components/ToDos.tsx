@@ -54,7 +54,7 @@ export function ToDos({ todos }: { todos: ToDoType[] | [] }) {
       <div className="text-gray-600 dark:text-gray-200 text-lg font-semibold">
         {clientTodos.map((todo: ToDoType) => {
           return (
-            <div key={todo.id} className="group mb-3 flex gap-x-1">
+            <div key={todo.id} className="group mb-3 flex gap-x-1 items-center">
               <input
                 onChange={() => handleStatusChange(todo)}
                 type="checkbox"
