@@ -48,24 +48,26 @@ export function ToDos({ todos }: { todos: ToDoType[] | [] }) {
       <div className="text-gray-600 dark:text-gray-200 text-lg font-semibold">
         {clientTodos.map((todo: ToDoType) => {
           return (
-            <div
-              key={todo.id}
-              className="group mb-3 flex gap-x-1 cursor-pointer"
-            >
+            <div key={todo.id} className="group mb-3 flex gap-x-1">
               <input
                 onChange={() => handleStatusChange(todo)}
                 type="checkbox"
                 checked={todo.metadata.completed}
+                className="cursor-pointer"
               />
               &nbsp;
               <div
                 onClick={() => handleStatusChange(todo)}
-                className={todo.metadata.completed ? "line-through" : ""}
+                className={
+                  todo.metadata.completed
+                    ? "cursor-pointer line-through"
+                    : "cursor-pointer"
+                }
               >
                 {todo.title}
               </div>
               <div
-                className="group-hover:inline-block hidden ml-2 w-[100px] text-red-400"
+                className="cursor-pointer group-hover:inline-block hidden ml-2 w-[100px] text-red-400"
                 onClick={() => handleDeleteClick(todo.id)}
               >
                 delete
