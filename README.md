@@ -31,7 +31,7 @@ bun i
 
 ## Create Project in Cosmic
 
-Then [log in to your Cosmic dashboard](https://app.cosmicjs.com/) and create a new empty Project.
+Log in to the [Cosmic dashboard](https://app.cosmicjs.com/) and create a new empty Project.
 ![Create Project](https://imgix.cosmicjs.com/8e311430-0bd7-11ef-9eca-7d347081a9fb-create-new-project.png?w=2000&auto=forat,compression)
 
 Create an Object type `ToDos` with slug `todos`:
