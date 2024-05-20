@@ -1,5 +1,5 @@
 # Cosmic Next ToDo
-![ToDo app screenshot](https://imgix.cosmicjs.com/49e208e0-1611-11ef-9eca-7d347081a9fb-CleanShot-2024-05-19-at-11.54.322x.png)
+![ToDo app screenshot](https://imgix.cosmicjs.com/f082fc30-16c1-11ef-9eca-7d347081a9fb-CleanShot-2024-05-20-at-08.58.322x.png)
 
 [[View Live Demo](https://cosmic-next-todo.vercel.app/)]
 
