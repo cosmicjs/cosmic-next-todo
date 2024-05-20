@@ -16,7 +16,7 @@ export function Footer() {
           viewBox="0 0 135 29"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="h-auto max-w-full fill-gray-700"
+          className="h-auto max-w-full fill-gray-700 dark:fill-gray-100"
           aria-label="Cosmic logo"
         >
           <path
