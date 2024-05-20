@@ -52,6 +52,8 @@ COSMIC_READ_KEY=your_bucket_read_key
 COSMIC_WRITE_KEY=your_bucket_write_key
 ```
 
+## Run the app
+
 Then run the development server:
 
 ```bash
@@ -64,6 +66,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see your ToDo list. Add / edit / delete ToDo items. See your ToDos in the Cosmic dashboard as well.
 
-Add / edit / delete ToDo items. See them in your Cosmic dashboard.
+## Contributing
+Contributions welcome!
